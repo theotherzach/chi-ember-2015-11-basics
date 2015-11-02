@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('welcome', { path: '/' });
   this.route('render-file-locations');
+  this.route('toggle-panel');
 });
 
 export default Router;
