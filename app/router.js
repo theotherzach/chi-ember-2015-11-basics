@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('welcome', { path: '/' });
   this.route('render-file-locations');
   this.route('toggle-panel');
+  this.route('schedule');
 });
 
 export default Router;
