@@ -39,6 +39,10 @@ export default Ember.Controller.extend({
     ]
   },
 
+  sortKey: undefined,
+
+  isDescending: false,
+
   sortedSongs: Ember.computed('sortKey', 'isDescending', function () {
     var songs = this.get('model.songs');
     var sortKey = this.get('sortKey');
