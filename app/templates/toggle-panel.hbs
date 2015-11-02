@@ -1,21 +1,15 @@
-<h3>Toggle</h3>
-
-{{!TODO: Delete p#instructions}}
-{{!TODO: Add a "Show Less" button element in the empty `p`}}
-{{!TODO: Create a toggle controller by running ember g controller toggle}}
-{{!TODO: Hide the `section` when a user clicks the Show Less button}}
-{{!TODO: Hide the Show Less button when the user clicks the Show Less button}}
-{{!TODO: Add a Show More button in the same `p` as the Show Less button}}
-{{!TODO: The Show More button should always be visible when the show less button isnt.}}
-{{!TODO: Clicking the Show More button should hide the Show More button and reveal the `section` and the Show Less button.}}
-
-<p id="instructions">
-<code>$ open app/templates/toggle-panel.hbs</code> for instructions.
-</p>
+<h3>Toggle Panel</h3>
 
 <p>
+{{#if isSectionVisible}}
+<button {{action "showLess"}}>Show Less</button>
+{{else}}
+<button {{action "showMore"}}>Show More</button>
+{{/if}}
 </p>
 
+{{#if isSectionVisible}}
 <section>Great turbulent clouds. The carbon in our apple pies circumnavigated galaxies, a billion trillion Orion's sword tingling of the spine with pretty stories for which there's little good evidence encyclopaedia galactica, from which we spring, decipherment hydrogen atoms cosmic ocean? A mote of dust suspended in a sunbeam, bits of moving fluff explorations extraordinary claims require extraordinary evidence courage of our questions, vastness is bearable only through love a mote of dust suspended in a sunbeam Orion's sword inconspicuous motes of rock and gas gathered by gravity rich in mystery cosmos? Consciousness kindling the energy hidden in matter a billion trillion. Muse about, explorations decipherment Rig Veda.</section>
+{{/if}}
 
 {{outlet}}
