@@ -5,12 +5,6 @@ var Router = Ember.Router.extend({
   location: config.locationType
 });
 
-Router.map(function() {
-  this.route('welcome', { path: '/' });
-  this.route('render-file-locations');
-  this.route('toggle-panel');
-  this.route('schedule');
-  this.route('sort-songs');
-});
+Router.map(function() {});
 
 export default Router;
